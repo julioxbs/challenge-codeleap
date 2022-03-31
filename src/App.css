@@ -1,38 +1,143 @@
-.App {
+:root {
+  --primary__clr: #000;
+  --font__family: 'Roboto', sans-serif;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  background-color: #DDD;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn {
+  font-family: var(--font__family);
+  color: #fff;
+  width: 111px;
+  height: 33px;
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 700;
+  padding: 8px 12px;
   text-align: center;
+  right: 30px;
+  margin-top: 1rem;
+  border: none;
+  cursor: pointer;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.button__box {
+  display: flex;
+  justify-content: flex-end;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Modal */
+.modal {
+  background-color: rgba(119, 119, 119, 0.8);
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  padding: 1rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.content__modal {
+  background-color: #fff;
+  max-width: 661px;
+  height: 168px;
+  width: 100%;
+  padding: 2rem;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.btn--modalDelete {
+  margin-top: 3rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.title__modal {
+  color: var(--primary__clr);
+  font-family: var(--font__family);
+  font-size: 22px;
+  line-height: 25.78px;
+}
+
+.btn__outline {
+  font-family: var(--font__family);
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  color: var(--primary__clr);
+
+  border: none;
+  background-color: #fff;
+  border: 1px solid #000;
+  width: 111px;
+  height: 33px;
+  cursor: pointer;
+}
+
+.button--edit {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-end;
+}
+
+/* Modal edit */
+.content__modal--edit {
+  background-color: #fff;
+  max-width: 723px;
+  width: 100%;
+  height: max-content;
+  padding: 2rem;
+  border: 1px solid #999;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.title__input--edit,
+.content__input--edit {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.title__input--edit label,
+.content__input--edit label {
+  color: var(--primary__clr);
+  font-family: var(--font__family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18.75px;
+
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#title, textarea {
+  border-radius: 4px;
+  border: none;
+  border: 1px solid #777;
+  padding: 8px 12px;
+  resize: none;
 }

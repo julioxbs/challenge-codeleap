@@ -1,0 +1,129 @@
+/* Form Post Styles */
+.content {
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.title__top {
+    background-color: var(--primary__clr);
+    color: #fff;
+    padding: 1rem;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 25.78px;
+    font-family: var(--font__family);
+}
+
+.container__post {
+    background-color: #fff;
+    padding: 1.5rem;
+}
+
+.form__createPost {
+    border: 1px solid #999;
+    position: relative;
+    padding: 1.5rem;
+}
+
+#title {
+    padding: 1rem;
+}
+
+form p {
+    color: var(--primary__clr);
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 26px;
+    font-family: var(--font__family);
+    margin-bottom: 1rem;
+}
+
+form .title__input {
+    display: flex;
+    flex-direction: column;
+}
+
+form .title__input #title {
+    border-radius: 4px;
+    border: none;
+    border: 1px solid #777;
+    padding: 8px 12px;
+}
+
+form .content__input {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+
+form .content__input #content {
+    border-radius: 4px;
+    border: none;
+    border: 1px solid #777;
+    padding: 8px 12px;
+    resize: none;
+}
+
+form label {
+    font-family: var(--font__family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    margin: .5rem 0;
+}
+
+.btn__create {
+    position: absolute;
+    top: 60%;
+    right: 1rem;
+}
+
+/* Post Styles */
+.post {
+    border: 1px solid #999;
+    margin-top: 3rem;
+}
+
+.title__post {
+    background-color: var(--primary__clr);
+    color: #fff;
+    padding: 1rem;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 25.78px;
+    font-family: var(--font__family);
+
+    display: flex;
+    align-items: center;
+}
+
+.title__post .icons {
+    margin-left: auto;
+    display: flex;
+    gap: 2rem;
+}
+
+.title__post .icons span {
+    cursor: pointer;
+}
+
+.content__post {
+    padding: 1rem;
+}
+
+.user {
+    margin-bottom: 1rem;
+    font-family: var(--font__family);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    color: #777;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.user .time {
+    color: #777;
+}
